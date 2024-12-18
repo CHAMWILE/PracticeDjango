@@ -1,0 +1,178 @@
+[
+    {
+        "id": "1",
+        "code": 9000,
+        "status": true,
+        "message": "Operation Success"
+    },
+    {
+        "id": "2",
+        "code": 9001,
+        "status": true,
+        "message": "User registered successfully"
+    },
+    {
+        "id": "3",
+        "code": 9002,
+        "status": false,
+        "message": "User with this Email Already Exists"
+    },
+    {
+        "id": "4",
+        "code": 9003,
+        "status": true,
+        "message": "You have login Successfully"
+    },
+    {
+        "id": "5",
+        "code": 9004,
+        "status": false,
+        "message": "Sorry! Fail to perfom the action. Some error occoured during request processing"
+    },
+    {
+        "id": "6",
+        "code": 9005,
+        "status": false,
+        "message": "Sorry! Credentials provided are not valid"
+    },
+    {
+        "id": "7",
+        "code": 9006,
+        "status": false,
+        "message": "Permission denied, un-authorized request"
+    },
+    
+    {
+        "id": "8",
+        "code": 9007,
+        "status": false,
+        "message": "Duplicate Record Found"
+    },
+    {
+        "id": "9",
+        "code": 9008,
+        "status": false,
+        "message": "Sorry, Record Does Not Exist"
+    },
+    {
+        "id": "10",
+        "code": 9009,
+        "status": false,
+        "message": "Sorry, Invalid email address!"
+    },
+    {
+        "id": "11",
+        "code": 9010,
+        "status": true,
+        "message": "Email sent successfuly"
+    },
+    {
+        "id": "12",
+        "code": 9011,
+        "status": false,
+        "message": "New password must be different from current password"
+    },
+    {
+        "id": "13",
+        "code": 9012,
+        "status": false, 
+        "message":  "The Role is Default Role, Can not be deleted"
+    },
+    {
+        "id": "14",
+        "code": 9013,
+        "status": false,
+        "message":  "Invalid reset password token"
+    },
+    {
+        "id": "15",
+        "code": 9014,
+        "status": false,
+        "message":  "invalid Token!"
+    },
+    {
+        "id": "16",
+        "code": 9015,
+        "status": false,
+        "message":  "Phone Number Already Exist"
+    },
+    {
+        "id": "17",
+        "code": 9016,
+        "status": false,
+        "message":  "Password mis-match"
+    },
+    {
+        "id": "18",
+        "code": 9017,
+        "status": false,
+        "message":  "invalid or expired Token!"
+    },
+    {
+        "id": "19",
+        "code": 9018,
+        "status": false,
+        "message":  "unsuported file type or size limit!"
+    },
+    {
+        "id": "20",
+        "code": 9019,
+        "status": false,
+        "message": "Rate limit exceeded. Please try again later."
+    },
+    {
+        "id": "21",
+        "code": 9020,
+        "status": false,
+        "message": "Your account deactivated, communicate with Admin!"
+    },
+    {
+        "id": "22",
+        "code": 9021,
+        "status": false,
+        "message":  "Sorry, User Profile Does Not Exist"
+    },
+    {
+        "id": "23",
+        "code": 9022,
+        "status": false,
+        "message":  ""
+    },
+    {
+        "id": "24",
+        "code": 9023,
+        "status": false,
+        "message":  "Provide mandatory filters"
+    },
+    {
+        "id": "25",
+        "code": 9024,
+        "status": false,
+        "message":  "All mandatory fields are required"
+    },
+    {
+        "id": "26",
+        "code": 9025,
+        "status": false,
+        "message": "Invalid date range"
+    },
+    {
+        "id": "27",
+        "code": 9026,
+        "status": false,
+        "message": "Invalid phone number"
+    },
+    {
+        "id": "28",
+        "code": 9027,
+        "status": false,
+        "message": "Invalid password. Please choose a stronger password with at least 8-16 characters, a mix of uppercase and lowercase letters, numbers, and special characters."
+    },
+       {
+        "id": "29",
+        "code": 9021,
+        "status": false,
+        "message":  "Sorry, Institution Does Not Exist"
+    }
+]
+  

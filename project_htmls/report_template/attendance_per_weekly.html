@@ -1,0 +1,122 @@
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Inventory Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style> 
+        @page { size: letter landscape; margin: 2cm; } 
+        *:not(pre):not(code):not(.font-monospace) {
+            font-family: Ubuntu, sans-serif!important;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            padding: 10px;
+          }
+          
+        
+          .grid-Subcontainer {
+            display: grid;
+            grid-template-columns: auto auto auto;
+          
+            gap: 10px;
+            padding: 10px 10px 20px 10px;
+          }
+          
+          .grid-Subcontainer .title h1{
+            font-size: 30px;
+          }
+          .grid-Subcontainer .title h4{
+            font-size: 30px;
+            margin: 20px 0;
+          }
+          .grid-Subcontainer .title h3{
+            font-size: 30px;
+            margin: 20px 0;
+          }
+        
+        .title-header{
+            margin-top: -100px;
+            color: #1f63bd;
+        
+        
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-Subcontainer" >
+          <div class="container"  >
+              <div class="row">
+              <div class="col-md-12">
+                      <img src="{{backend_url}}/media/bibi_na_bwana.png" alt="Logo" border="0"
+                          style="display: block; width: 100px; max-width: 100px; min-width: 100px; margin-left: -50px;">
+              </div>
+  
+              <div class="col-md-12">
+                      <img src="{{backend_url}}/media/ega.png"  alt="Logo" border="0"
+                          style="display: block; width: 100px; max-width: 100px; min-width: 100px;margin-left:800px;margin-top: -70px;">
+              </div>
+          </div>
+
+          <center style="margin-top: -100px;margin-bottom: 60px;">
+            <h1 style="font-size: 20px">e-GOVERNMENT AUTHORITY (eGA)</h1>
+            <h4 style="font-size: 20px">Research, Innovation and Development Center</h4>
+            <h4 style="font-size: 20px">RIDC</h4>
+         </center>
+         
+      </div>
+
+    <center>
+        <h2 class="font-weight-bold">ATENDANCE LIST FOR WEEK </h2>
+    </center>
+    
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th  colspan="8" style="background-color: #D1E9FF; text-align: center; font-size: 12px;">SN</th>
+                <th  colspan="8" style="background-color: #D1E9FF; text-align: center; font-size: 12px;">Full Name</th>
+                <th  colspan="8" style="background-color: #D1E9FF; text-align: center; font-size: 12px;">Sign IN</th>
+                <th  colspan="8" style="background-color: #D1E9FF; text-align: center; font-size: 12px;">Sign OUT</th>
+                
+               
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for consumable_asset in data %}
+
+
+            <tr>
+           
+                <td colspan="8" style="text-align: center;  background-color: #F5F5F5;  font-size: 10px">
+                {{forloop.counter}}
+                </td>
+                <td colspan="8" style="text-align: center; background-color: #F5F5F5;  font-size: 10px">
+                {{consumable_asset.0}}
+                </td>
+                <td colspan="8" style="text-align: center ; background-color: #F5F5F5;  font-size: 10px">
+                {{consumable_asset.1}}
+                </td>
+                <td colspan="8" style="text-align: center;background-color: #F5F5F5;  font-size: 10px" >
+                {{consumable_asset.2}}
+                </td>
+                
+            </tr>
+          
+            {% endfor %}
+
+        
+        </tbody>
+    </table>
+</body>
+</html>
